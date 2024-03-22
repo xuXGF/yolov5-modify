@@ -1,0 +1,14 @@
+train: ../data_bosch/images/train
+val: ../data_bosch/images/val
+test: ../data_bosch/images/test
+
+
+# Classes
+nc: 4  # number of classes
+names: ['Green','Yellow','Red','off']  # class names
+
+## Classes
+#nc: 13  # number of classes
+#names: ['GreenStraightLeft', 'Yellow', 'GreenLeft', 'Red', 'GreenStraight',
+#        'RedStraightLeft', 'GreenStraightRight', 'Green', 'RedRight', 'GreenRight',
+#        'RedStraight', 'off', 'RedLeft']  # class names

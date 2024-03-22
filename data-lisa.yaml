@@ -1,0 +1,14 @@
+train: ../data-lisa/images/train
+val: ../data-lisa/images/val
+test: ../data-lisa/images/test
+
+
+# Classes
+nc: 3  # number of classes
+names: ['Green','Red','Yellow']  # class names
+
+## Classes
+#nc: 13  # number of classes
+#names: ['GreenStraightLeft', 'Yellow', 'GreenLeft', 'Red', 'GreenStraight',
+#        'RedStraightLeft', 'GreenStraightRight', 'Green', 'RedRight', 'GreenRight',
+#        'RedStraight', 'off', 'RedLeft']  # class names

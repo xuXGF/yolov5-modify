@@ -305,11 +305,17 @@ def run(weights=ROOT / 'yolov5s.pt',  # model.pt path(s)
 
 def parse_opt():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / './yolov5l-1w.pt', help='model path(s)')
-    parser.add_argument('--source', type=str, default=ROOT / r"data/images/bus.jpg",
+    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / '../result-end/bosch+s/weights/best.pt', help='model path(s)')
+    # parser.add_argument('--weights', nargs='+', type=str, default=ROOT / '../result-end/bosch+s+small/weights/best.pt', help='model path(s)')
+    # parser.add_argument('--weights', nargs='+', type=str, default=ROOT / '../result-end/bosch+s+small+cbam/weights/best.pt', help='model path(s)')
+
+    # parser.add_argument('--source', type=str, default=ROOT / r"D:\19837\bishe\result-end\img", help='file/dir/URL/glob, 0 for webcam')
+
+    parser.add_argument('--source', type=str, default=ROOT / r"D:\19837\bishe\yolov5-modify\111.png",
                         help='file/dir/URL/glob, 0 for webcam')
-    # parser.add_argument('--source', type=str, default="http://admin:admin@192.168.31.206:8081",
-    #                     help='file/dir/URL/glob, 0 for webcam')
+
+    # parser.add_argument('--source', type=str, default=ROOT / r"D:\19837\bishe\data_bosch\images\test\40240.png", help='file/dir/URL/glob, 0 for webcam')
+    # parser.add_argument('--source', type=str, default=ROOT / r"D:\19837\bishe\data_bosch\images\val\39368.png", help='file/dir/URL/glob, 0 for webcam')
     parser.add_argument('--mulpicplus', type=str, default= "1",help='  1 for normal,2 for 4pic plus,3 for 9pic plus and so on')
     parser.add_argument('--imgsz', '--img', '--img-size', nargs='+', type=int, default=[640], help='inference size h,w')
     parser.add_argument('--conf-thres', type=float, default=0.25, help='confidence threshold')

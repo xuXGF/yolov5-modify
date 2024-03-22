@@ -1,0 +1,18 @@
+train: ../data/images/train
+val: ../data/images/val
+
+
+# Classes
+nc: 4  # number of classes
+names: ['Green','Yellow','Red','off']  # class names
+
+## Classes
+#nc: 13  # number of classes
+#names: ['GreenStraightLeft', 'Yellow', 'GreenLeft', 'Red', 'GreenStraight',
+#        'RedStraightLeft', 'GreenStraightRight', 'Green', 'RedRight', 'GreenRight',
+#        'RedStraight', 'off', 'RedLeft']  # class names
+
+
+
+
+
